@@ -1,0 +1,17 @@
+// 背景边框色
+$--color-primary: #1d4fe6 !default;
+$--color-default: #2959e7 !default;
+$--color-bg-blue: #67ace4 !default;
+$--color-bg-gray: #ddd !default;
+$--color-bg-white: #fff !default;
+
+// 字体色
+$--color-text: #495468 !default;
+$--color-text-blue: #67ace4 !default;
+$--color-text-white: #fff !default;
+
+// 头部高度
+$--header-height: 45px !default;
+// 左侧栏宽度
+$--sidebar-default-width: 175px !default; // 展开宽度
+$--sidebar-collapse-width: 64px !default; // 收起宽度
