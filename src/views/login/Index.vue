@@ -34,10 +34,8 @@
 </template>
 
 <script>
-import { setStorage } from '@utils/index';
-import BeforeRouteEnterMixin from '@mixins/BeforeRouteEnter'
+import { setStorage, getStorage } from '@utils/index';
 export default {
-  mixins: [BeforeRouteEnterMixin],
   data() {
     return {
       ruleForm: {
@@ -66,6 +64,12 @@ export default {
           return false;
         }
       });
+    }
+  },
+  mounted() {
+    if (getStorage()) {
+      this.$message.warning('无需重复登录')
+      this.$router.push('/')
     }
   }
 }
